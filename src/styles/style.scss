@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+@font-face {
+    font-family: Chromoxome;
+    src: url('../fonts/Chromoxome\ Pro/ChromoxomePro-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, .button {
+    font-family: Chromoxome;
+    text-transform: uppercase;
+    color: #151515;
+}
+p, a, li {
+    font-family: 'News Cycle', sans-serif;
+    color: #151515;
+}
+
+ul {
+    list-style: none;
+}
+
+.button {
+    background-color: #991C20;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+
+    svg {
+        fill: white;
+        vertical-align: middle;
+        margin-right: 5px;
+        stroke: none;
+    }
+}
+
+@import './header';
+@import './homepage';
+@import './footer';

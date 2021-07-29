@@ -30,5 +30,7 @@ module.exports = {
       },
       __key: "images",
     },
+    "react-feather",
+    "react-fast-marquee",
   ],
 };

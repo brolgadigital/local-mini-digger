@@ -1,0 +1,51 @@
+.hero {
+    background-color: #0F101082;
+    height: calc(100vh - 120px);
+    position: relative;
+
+    .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0, -50%);
+        width: auto;
+        
+        h1 {
+            font-size: 5em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .button {
+            float: right;
+        }
+    }
+}
+
+.ticker {
+    background-color: #991C20;
+    padding: 3px 0 5px 0;
+
+    ul {
+
+        li {
+            float: left;
+            white-space: break-spaces;
+            color: white;
+        }
+    }
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .service-card {
+        text-align: center;
+    }
+}

@@ -1,0 +1,58 @@
+.footer {
+    background-color: #151515;
+    padding: 100px 0 30px 0;
+    
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 40%;
+        height: auto;
+        margin-top: -55px;
+    }
+
+    ul {
+        li {
+            color: white;
+            margin-bottom: 10px;
+
+            h3 {
+                color: white;
+                font-size: 1.8em;
+            }
+
+            a {
+                color: white;
+            }
+
+            p {
+                color: white;
+                display: inline-block;
+            }
+
+            svg {
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 18px;
+                height: auto;
+                display: inline-block;
+
+                &:last-of-type {
+                    vertical-align: top;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.built-by {
+    background-color: #991C20;
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+}
