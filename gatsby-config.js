@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://localminidigger.com.au",
     title: "Local Mini Digger",
   },
   plugins: [

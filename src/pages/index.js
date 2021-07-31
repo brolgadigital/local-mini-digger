@@ -17,17 +17,17 @@ export default function index() {
 
       <div className='services'>
         <ServiceCard 
-          image=''
+          image='commercial nathan-waters-j7q-Z9DV3zw-unsplash'
           title='Residential & Commercial'
           services={['Large or small scale', 'Tight-space capable']}
         />
         <ServiceCard 
-          image=''
+          image='excavation abdul-zreika-maVHoAWycOs-unsplash'
           title='Excavation & Digging'
           services={['Plumbing channels', 'Post holes', 'Foundation preparation', 'Surface levelling']}
         />
         <ServiceCard 
-          image=''
+          image='rubbish 158876557_127682705949149_1641915770293018496_n'
           title='Dirt & Rubbish Removal'
           services={['Construction Rubbish', 'Skip moving', 'Earthworks']}
         />

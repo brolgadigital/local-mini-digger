@@ -5,7 +5,7 @@ export default function Ticker() {
 
     const suburbList = shuffleArray(suburbs);
 
-    const listItems = suburbList.map((name) => <li>{name}  -  </li>);
+    const listItems = suburbList.map((name) => <li key={name}>{name}  -  </li>);
     
 
     return (

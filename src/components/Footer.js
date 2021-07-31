@@ -11,11 +11,11 @@ export default function Footer() {
                 <Link to='/' className='logo'><StaticImage src='../images/LMD-bobcat-white.png' alt='Local Mini Digger' /></Link>
                 <ul>
                     <li><h3>Quick Links</h3></li>
-                    <li><Link>Home</Link></li>
-                    <li><Link>Contact</Link></li>
-                    <li><Link>Services</Link></li>
-                    <li><Link>Gallery</Link></li>
-                    <li><Link>Testimonials</Link></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/'>Contact</Link></li>
+                    <li><Link to='/'>Services</Link></li>
+                    <li><Link to='/'>Gallery</Link></li>
+                    <li><Link to='/'>Testimonials</Link></li>
                 </ul>
                 <ul>
                     <li><h3>Contact</h3></li>
