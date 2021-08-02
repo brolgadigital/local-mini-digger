@@ -49,12 +49,35 @@
 .about {
     background-color: white;
     border-radius: 6px;
-    padding: 20px
+    padding: 20px;
+    position: relative;
+    margin-top: 40px;
+    overflow: auto;
+
+    .container {
+        width: 49%;
+        float: left;
+
+        &:first-of-type {
+            margin-right: 2%;
+        }
+
+        ul {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: 700;
+            line-height: 2em;
+        }
+    }
 
 }
 .full-width-red {
     width: 100%;
-    background-color: #991C20;;
+    background-color: #991C20;
+    height: 200px;
+    margin: -160px 0 40px 0;
+    z-index: -1;
 }
 
 .services {

@@ -6,7 +6,7 @@ import * as Icon from 'react-feather'
 export default function Menu() {
     return (
         <div className='menu'>
-            <Link to='/'><StaticImage src='../images/LMD-toro-colour.png' className='logo' alt='Local Mini Digger' /></Link>
+            <Link to='/'><StaticImage src='../images/LMD-toro-colour.png' height='74' alt='Local Mini Digger' /></Link>
             <ul>
                 <li><Link to='/' activeClassName="currentPage">Services</Link></li>
                 <li><Link to='/' activeClassName="currentPage">Contact</Link></li>

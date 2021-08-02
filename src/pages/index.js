@@ -19,13 +19,18 @@ export default function index() {
       <Ticker />
 
       <div className='wrapper about'>
-        <StaticImage src='../images/LMD-toro-colour.png' alt='Local Mini Digger' />
-        <ul>
-          <li>Quality Work</li>
-          <li>Personal Service</li>
-          <li>Family Owned</li>
-          <li>Great Value</li>
-        </ul>
+
+        <div className='container'>
+          <StaticImage src='../images/LMD-toro-colour.png' alt='Local Mini Digger' />
+          <ul>
+            <li>Quality Work</li>
+            <li>Personal Service</li>
+            <li>Family Owned</li>
+            <li>Great Value</li>
+          </ul>
+        </div>
+
+        <StaticImage src='../images/IMG_0396.JPG' className='container' alt='Local Mini Digger uses machinery like this compact Toro' />
       </div>
       <div className='full-width-red'></div>
 
