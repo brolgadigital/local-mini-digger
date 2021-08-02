@@ -46,6 +46,17 @@
     }
 }
 
+.about {
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px
+
+}
+.full-width-red {
+    width: 100%;
+    background-color: #991C20;;
+}
+
 .services {
     display: flex;
     flex-direction: row;
@@ -53,5 +64,67 @@
 
     .service-card {
         text-align: center;
+        padding: 0 40px;
+        flex: 1;
+
+        .service-image {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    h1 {
+        color: #991C20;
+        font-size: 4em;
+        flex-basis: 100%;
+    }
+    h2 {
+        font-family: 'News Cycle', sans-serif;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 1.5em;
+        flex-basis: 100%;
+    }
+    .testimonial {
+        border: 2px solid #991C20;
+        border-radius: 6px;
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        svg {
+            stroke: #707070;
+        }
+
+        .rated {
+            stroke: #991C20;
+            fill: #991C20;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        h4 {
+            font-family: 'News Cycle', sans-serif;
+            text-transform: none;
+            color: #991C20;
+            font-size: 0.8em;
+        }
     }
 }

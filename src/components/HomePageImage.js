@@ -26,7 +26,7 @@ const HomePageImage = (props) => {
   )
   const imageData = useImage.node.childImageSharp.gatsbyImageData
   if (useImage) { 
-    return ( <GatsbyImage image={imageData} /> )
+    return ( <GatsbyImage image={imageData} className={props.class}/> )
   }
 }
 export default HomePageImage

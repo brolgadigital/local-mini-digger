@@ -17,8 +17,8 @@
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
-
 
 h1, h2, h3, h4, .button {
     font-family: Chromoxome;
@@ -49,6 +49,8 @@ ul {
         stroke: none;
     }
 }
+
+
 
 @import './header';
 @import './homepage';
