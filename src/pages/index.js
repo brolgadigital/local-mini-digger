@@ -9,6 +9,7 @@ import ServiceCard from '../components/ServiceCard'
 import HomePageGallery from '../components/HomePageGallery'
 import Testimonal from '../components/Testimonial'
 import Footer from '../components/Footer'
+import { Link } from 'gatsby'
 
 export default function index() {
   return (
@@ -50,6 +51,11 @@ export default function index() {
           title='Dirt & Rubbish Removal'
           services={['Construction Rubbish', 'Skip moving', 'Earthworks']}
         />
+        <div className='links'>
+          <Link className='button' to='/gallery'>Gallery</Link>
+          <a className='button' href='instagram.com'>Facebook</a>
+          <a className='button' href='instagram.com'>Instagram</a>
+        </div>
       </div>
 
       <HomePageGallery />

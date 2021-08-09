@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://localminidigger.com.au",
@@ -32,5 +36,6 @@ module.exports = {
     },
     "react-feather",
     "react-fast-marquee",
+    "emailjs-com",
   ],
 };

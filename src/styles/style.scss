@@ -16,8 +16,7 @@
 .wrapper {
     width: 90%;
     max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 60px auto;
 }
 
 h1, h2, h3, h4, .button {
@@ -35,15 +34,38 @@ ul {
 }
 
 .button {
+    font-family: Chromoxome;
+    text-transform: uppercase;
     background-color: #991C20;
     color: white;
     border-radius: 12px;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
 
     svg {
         fill: white;
+        vertical-align: middle;
+        margin-right: 5px;
+        stroke: none;
+    }
+}
+.button-open {
+    font-family: Chromoxome;
+    text-transform: uppercase;
+    border: 3px solid #991C20;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+    background-color: inherit;
+
+    svg {
+        fill: #991C20;
         vertical-align: middle;
         margin-right: 5px;
         stroke: none;
@@ -55,3 +77,4 @@ ul {
 @import './header';
 @import './homepage';
 @import './footer';
+@import './forms';
