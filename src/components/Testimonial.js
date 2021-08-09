@@ -15,14 +15,9 @@ export default function Testimonial(props) {
 
     return (
         <div className='testimonial'>
-            
             <div>{stars}</div>
-
-
-
-            {/* <Star /><Star /><Star /><Star /><Star /> */}
             <p>{props.review}</p>
-            <h4>{props.name} // {props.occupation}</h4>
+            <h4>{props.name} {'//'} {props.occupation}</h4>
         </div>
     )
 }
