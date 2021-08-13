@@ -32,15 +32,18 @@ export default function contact() {
                 <a className='call button' href='tel:0410307705'><Icon.Phone />Call Now</a>
 
                 <form className="contact-form" onSubmit={sendEmail}>
-                    <input type="hidden" name="contact_number" />
-                    <label>Name</label>
-                    <input type="text" name="user_name" />
-                    <label>Email</label>
-                    <input type="email" name="user_email" />
-                    <label>Message</label>
-                    <textarea name="message" />
-                    <p>All fields are required</p>
-                    <input type="submit" value="Send" className='button-open' />
+                    {/* <input type="hidden" name="contact_name" /> */}
+                    <label for='user_name'>Name</label>
+                    <input type='text' name='user_name' id='user_name' />
+
+                    <label for='user_email'>Email</label>
+                    <input type='email' name='user_email' id='user_email' />
+
+                    <label for='message'>Message</label>
+                    <textarea name='message' id='message' />
+
+                    <p>Please Note: All fields are required</p>
+                    <input type='submit' value='Send Message' className='button-open' />
                 </form>
 
 

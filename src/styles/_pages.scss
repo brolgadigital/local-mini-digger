@@ -1,0 +1,22 @@
+.service-table-cell {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0;
+
+    .cell-image, .table-info {
+        flex: 1 1 50%;
+    }
+
+    .cell-image {
+        max-height: 200px;
+    }
+    .table-info {
+        padding: 20px;
+    }
+}
+.service-table-cell:nth-of-type(even) {
+    flex-flow: row-reverse;
+    
+}
