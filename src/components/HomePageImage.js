@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 const HomePageImage = (props) => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query InfoQuery {
       allFile(filter: {relativeDirectory: {eq: "home-page-images"}}) {
         edges {
           node {
@@ -26,7 +26,7 @@ const HomePageImage = (props) => {
   )
   const imageData = useImage.node.childImageSharp.gatsbyImageData
   if (useImage) { 
-    return ( <GatsbyImage image={imageData} className={props.class}/> )
+    return ( <GatsbyImage image={imageData} className={props.class} alt='' /> )
   }
 }
 export default HomePageImage

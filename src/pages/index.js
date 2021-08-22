@@ -6,7 +6,7 @@ import Menu from '../components/Menu'
 import Hero from '../components/Hero'
 import Ticker from '../components/Ticker'
 import ServiceCard from '../components/ServiceCard'
-import HomePageGallery from '../components/HomePageGallery'
+import ScrollingGallery from '../components/ScrollingGallery'
 import Testimonal from '../components/Testimonial'
 import Footer from '../components/Footer'
 import { Link } from 'gatsby'
@@ -58,19 +58,21 @@ export default function index() {
         </div>
       </div>
 
-      <HomePageGallery />
+      <div className='gallery'>
+        <ScrollingGallery />
+      </div>
 
       <div className='wrapper testimonials'>
         <h1>Local Mini Digger</h1>
         <h2>Servicing Melbournes Eastern Suburbs</h2>
         <Testimonal 
-          rating='4' review='Ed did a fantastic job preparing the driveway for a new finish. Will definitely be using his services again!' name='Shelley Bassett' occupation='Digital Designer'
+          rating={4} review='Ed did a fantastic job preparing the driveway for a new finish. Will definitely be using his services again!' name='Shelley Bassett' occupation='Digital Designer'
         />
         <Testimonal 
-          rating='2' review='We hired Local Mini Digger to make a hole in our garden. It was huge!' name='Judy Kefford' occupation='Administration Manager'
+          rating={2} review='We hired Local Mini Digger to make a hole in our garden. It was huge!' name='Judy Kefford' occupation='Administration Manager'
         />
         <Testimonal 
-          rating='3' review="Local Mini Digger was great. They made a huge mess then organised the total clean up. You'd never know I even had work done" name='Jason Bingham' occupation='Secondary Teacher'
+          rating={3} review="Local Mini Digger was great. They made a huge mess then organised the total clean up. You'd never know I even had work done" name='Jason Bingham' occupation='Secondary Teacher'
         />
       </div>
       

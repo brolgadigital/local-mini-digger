@@ -113,6 +113,28 @@
     }
 }
 
+.gallery {
+
+    .gallery-carousell-image {
+        background-color: #0F101082;
+        height: 300px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: initial;
+        }
+    }
+
+    img {
+        height: 300px;
+        width: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
 .testimonials {
     display: flex;
     flex-wrap: wrap;

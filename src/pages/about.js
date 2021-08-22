@@ -13,7 +13,7 @@ export default function about() {
                 <h1>Local Mini Digger</h1>
 
                 <h2>Meet The Team</h2>
-                
+                {/* gavin, judy, ed */}
             </div>
             
             <Footer />
