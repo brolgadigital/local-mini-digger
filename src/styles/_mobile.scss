@@ -1,0 +1,96 @@
+@media(max-width: 960px) {
+    .menu {
+        padding-left: 3%;
+
+        .call {
+            padding-right: 3%;
+        }
+    }
+
+    .footer {
+        .wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .logo {
+                flex-basis: 60%;
+                margin-top: -100px;
+                margin-bottom: 60px;
+            }
+
+            ul {
+                flex: 1 1 50%;
+
+                li {
+                    margin: 0 auto 10px auto;
+                    width: 60%;
+                }
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 750px) {
+    // Mobile Menu
+    .hero {
+        .wrapper {
+            width: 100%;
+            padding: 0 5%;
+            top: 25%;
+            left: 0;
+            transform: none;
+        }
+    }
+    .about {
+        max-width: 500px;
+
+        .container {
+            margin: 0 auto;
+            width: 100%;
+
+            &:first-of-type {
+                margin-bottom: 30px;
+                margin-right: 0;
+            }
+        }
+    }
+    .services {
+        flex-direction: column;
+
+        .service-card {
+            ul {
+                margin-bottom: 30px;
+            }
+        }
+
+        .links {
+            margin-top: 10px;
+        }
+    }
+    .testimonials, .team-members, .machines {
+        flex-direction: column;
+
+        .digger {
+            img {
+                margin-bottom: 30px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .footer {
+        .wrapper {
+            ul {
+                text-align: center;
+                flex-basis: 100%;
+
+                &:first-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
