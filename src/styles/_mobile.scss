@@ -30,9 +30,17 @@
         
     }
 }
+@media(max-width: 790px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
 
 @media(max-width: 750px) {
-    // Mobile Menu
     .hero {
         .wrapper {
             width: 100%;

@@ -71,3 +71,46 @@
         }
     }
 }
+
+.mobile-menu {
+    display: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: auto;
+
+    a{
+        &:first-of-type {
+            flex: 1 1;
+            display: inline;
+            height: 60px;
+            position: relative;
+
+            &>div {
+                position: absolute;
+                top: 55%;
+                left: 0;
+                transform: translate(0, -45%);
+            }
+        }
+    }
+
+    button {
+        background-color: inherit;
+        height: 60px;
+        margin-right: 20px;
+
+        svg {
+            vertical-align: middle;
+        }
+    }
+
+    .call {
+        float: right;
+    }
+
+    ul {
+        margin-right: 20px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
