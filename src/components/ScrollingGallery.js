@@ -8,7 +8,11 @@ export default function ScrollingGallery() {
 
     return (
         <>
-            <Marquee gradient={false}>
+            <Marquee 
+                gradient={false}
+                pauseOnClick={true}
+                pauseOnHover={true}
+            >
                 <HomePageGalleryImage />
             </Marquee>
         </>

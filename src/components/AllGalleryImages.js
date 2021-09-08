@@ -1,11 +1,11 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
+import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry'
 
-const HomePageGalleryImage = () => {
+const AllGalleryImages = () => {
   const data = useStaticQuery(graphql`
-    query GalleryQuery {
+    query AllImageQuery {
       allFile(filter: {relativeDirectory: {eq: "gallery-images"}}) {
         edges {
           node {
@@ -13,7 +13,7 @@ const HomePageGalleryImage = () => {
             childImageSharp {
               id
               gatsbyImageData(
-                layout: CONSTRAINED, height: 300
+                layout: CONSTRAINED
               )
             }
           }
@@ -22,19 +22,25 @@ const HomePageGalleryImage = () => {
     }
   `)
 
-    // const imageData = data.node.childImageSharp.gatsbyImageData
     const displayImage = data.allFile.edges.map((imageData) => {
         // console.log(imageData)
-        return ( <Link to='/gallery'><GatsbyImage 
+        return ( <GatsbyImage 
             image={imageData.node.childImageSharp.gatsbyImageData}
             alt=''
             title={imageData.node.name}
             key={imageData.node.childImageSharp.id}
-            className='gallery-carousell-image'
-            height={parseInt(imageData.node.childImageSharp.gatsbyImageData.height)}
-        /></Link> )
+            className='gallery-image'
+        />)
     })
-    return displayImage
 
+    return (
+        <ResponsiveMasonry
+            columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+        >
+            <Masonry gutter='2em'>
+                {displayImage}
+            </Masonry>
+        </ResponsiveMasonry>
+    )
 }
-export default HomePageGalleryImage
+export default AllGalleryImages
