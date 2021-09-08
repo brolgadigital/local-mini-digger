@@ -32,7 +32,6 @@ export default function contact() {
                 <a className='call button' href='tel:0410307705'><Icon.Phone />Call Now</a>
 
                 <form className="contact-form" onSubmit={sendEmail}>
-                    {/* <input type="hidden" name="contact_name" /> */}
                     <label for='user_name'>Name</label>
                     <input type='text' name='user_name' id='user_name' aria-label='Full Name' />
 
