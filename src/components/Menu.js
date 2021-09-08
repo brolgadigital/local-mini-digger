@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import * as Icon from 'react-feather'
@@ -53,7 +53,7 @@ class Menu extends React.Component {
             <button id='menu' onClick={this.open} aria-label='Open Menu' style={{display: this.state.burger}}><Icon.Menu /></button>
             
             <button id='close' onClick={this.close} aria-label='Close Menu' style={{display: this.state.cross}}><Icon.X /></button>
-            <a className='call' href='tel:0410307705'><Icon.Phone /></a>
+            <a className='call' href='tel:0410307705' aria-label='call'><Icon.Phone /></a>
             <ul style={{display: this.state.items}}>
                 <li><Link to='/services' activeClassName="currentPage">Services</Link></li>
                 <li><Link to='/contact' activeClassName="currentPage">Contact</Link></li>

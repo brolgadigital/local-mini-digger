@@ -34,16 +34,16 @@ export default function contact() {
                 <form className="contact-form" onSubmit={sendEmail}>
                     {/* <input type="hidden" name="contact_name" /> */}
                     <label for='user_name'>Name</label>
-                    <input type='text' name='user_name' id='user_name' />
+                    <input type='text' name='user_name' id='user_name' aria-label='Full Name' />
 
                     <label for='user_email'>Email</label>
-                    <input type='email' name='user_email' id='user_email' />
+                    <input type='email' name='user_email' id='user_email' aria-label='Email' />
 
                     <label for='message'>Message</label>
-                    <textarea name='message' id='message' />
+                    <textarea name='message' id='message' aria-label='Message' />
 
                     <p>Please Note: All fields are required</p>
-                    <input type='submit' value='Send Message' className='button-open' />
+                    <input type='submit' value='Send Message' className='button-open' aria-label='Send Message'/>
                 </form>
 
 

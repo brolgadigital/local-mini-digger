@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactBar from '../components/ContactBar'
 import Menu from '../components/Menu'
-import TeamMemberCard from '../components/TeamMemberCard'
+// import TeamMemberCard from '../components/TeamMemberCard'
 import { StaticImage } from 'gatsby-plugin-image'
 import Footer from '../components/Footer'
 

@@ -17,7 +17,6 @@ export default function LMD() {
   `)
   const {
     site: {
-      siteMetadata,
       siteMetadata: {description: siteDescription},
     },
   } = data

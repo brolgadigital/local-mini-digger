@@ -1,11 +1,11 @@
 import React from 'react'
 import * as Icon from 'react-feather'
-import LMD from './seo/LMD'
+import Lmd from './seo/LMD'
 
 export default function ContactBar() {
     return (
         <>
-        <LMD />
+        <Lmd />
 
         <div className='top-contact'>
             <Icon.PhoneCall />
