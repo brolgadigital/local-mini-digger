@@ -18,19 +18,19 @@ export default function services() {
                     <ServiceCell 
                         title='Residential & Commercial'
                         image='commercial nathan-waters-j7q-Z9DV3zw-unsplash'
-                        text=''
+                        text="We have no size or scope limits to our projects. From a few post-holes on a residenial property to foundation and plumbing preparation on a commercial site, we've got the tools to get the job done."
                     />
 
                     <ServiceCell 
                         title='Excavation & Digging'
                         image='excavation abdul-zreika-maVHoAWycOs-unsplash'
-                        text=''
+                        text="Our diggers are capable of fitting into almost any space, making excavation, digging and filling a breeze. We can squeeze into backyards, courtyards and even narrow sideyards. Even with this compact footprint, we're able to tackle the big tasks!"
                     />
 
                     <ServiceCell 
                         title='Dirt & Rubbish Removal'
                         image='rubbish 158876557_127682705949149_1641915770293018496_n'
-                        text=''
+                        text="Removing dirt, rubbish and builders debris can be a large task. Our machinery clears it up easily, and we'll also organise the skip to take it all away, leaving you with a fresh, clean space to build or landscape on."
                     />
                 </div>
                 
