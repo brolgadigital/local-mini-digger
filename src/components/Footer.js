@@ -12,10 +12,9 @@ export default function Footer() {
                 <ul>
                     <li><h3>Quick Links</h3></li>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Contact</Link></li>
-                    <li><Link to='/'>Services</Link></li>
-                    <li><Link to='/'>Gallery</Link></li>
-                    <li><Link to='/'>Testimonials</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
+                    <li><Link to='/services'>Services</Link></li>
+                    <li><Link to='/gallery'>Gallery</Link></li>
                 </ul>
                 <ul>
                     <li><h3>Contact</h3></li>
@@ -27,7 +26,7 @@ export default function Footer() {
             </div>
         </div>
         <div className='built-by'>
-            <p><Icon.Code /> with <Icon.Heart /> by <a href='brolgadigital.com.au' title='Brolga Digital'>Brolga Digital</a></p>
+            <p><Icon.Code /> with <Icon.Heart /> by <a href='https://brolgadigital.com.au' title='Brolga Digital'>Brolga Digital</a></p>
         </div>
         </>
     )
