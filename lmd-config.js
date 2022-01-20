@@ -6,7 +6,6 @@ module.exports = {
     lang: 'en-au', // Language Tag on <html> element
     pathPrefix: '/',
     siteLogo: 'images/icon.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
-    // altLogo: 'images/bd-text-red-solid-01.png',
     siteDescription: 'Got a big job in a small space? You need a Local Mini Digger',
     minibio: `Servicing Melbourne's Eastern Suburbs, Local Mini Digger can help with many different construction projects. From trench and foundations to demolition and rubbish removal, they have years of industry experience.`,
     author: 'Local Mini Digger', // Author for schemaORGJSONLD

@@ -27,6 +27,12 @@
 
             a {
                 color: white;
+                text-decoration: none;
+
+                &:hover {
+                    cursor: pointer;
+                    font-weight: bold;
+                }
             }
 
             p {

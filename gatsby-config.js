@@ -38,10 +38,24 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "G-1CQTBX7Z7G",
-      },
+        resolve: 'gatsby-plugin-google-gtag',
+        options: {
+            trackingIds: [
+                "G-1CQTBX7Z7G",
+                // "AW-CONVERSION_ID", 
+                // "DC-FLOODIGHT_ID", 
+            ],
+            gtagConfig: {
+                optimize_id: "OPT_CONTAINER_ID",
+                anonymize_ip: true,
+                cookie_expires: 0,
+            },
+            pluginConfig: {
+                head: true,
+                respectDNT: true,
+                exclude: ["/preview/**", "/do-not-track/me/too/"],
+            },
+        },
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

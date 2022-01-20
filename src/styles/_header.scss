@@ -41,6 +41,10 @@
             a {
                 text-decoration: none;
 
+                &:hover {
+                    font-weight: 500;
+                }
+
                 &.currentPage {
                     font-weight: 700;
                 }
